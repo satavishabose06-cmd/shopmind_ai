@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyer Profile & AI Recommendations — ShopMind AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/products.css">
+  <style>
+    .profile-dashboard {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 32px;
+      margin-top: 24px;
+    }
+    @media (max-width: 900px) {
+      .profile-dashboard {
+        grid-template-columns: 1fr;
+      }
+    }
+    .profile-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .user-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .user-header-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .user-avatar-circle {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #6858e8, #9383f2);
+      color: white;
+      font-size: 26px;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 8px 18px rgba(104, 88, 232, 0.25);
+    }
+    .persona-badge {
+      display: inline-block;
+      background: #eeeaff;
+      color: var(--purple);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-top: 4px;
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 18px 0;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .stat-box {
+      text-align: center;
+    }
+    .stat-box b {
+      display: block;
+      font-size: 18px;
+      color: var(--purple);
+    }
+    .stat-box small {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .ai-rec-banner {
+      background: linear-gradient(135deg, #2b2653, #1e193b);
+      color: white;
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ai-rec-banner::after {
+      content: "✦ AI AGENT";
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: #b5a7ff;
+      font-weight: 800;
+    }
+    .ai-rec-banner h3 {
+      font-family: Manrope, sans-serif;
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+    .ai-rec-banner p {
+      color: #c9c3e6;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .history-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .history-card h3 {
+      margin: 0 0 14px;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .order-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f2f0ea;
+    }
+    .order-item:last-child {
+      border-bottom: none;
+    }
+    .order-thumb {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      object-fit: cover;
+      background: #eee;
+    }
+    .order-info {
+      flex: 1;
+    }
+    .order-info b {
+      display: block;
+      font-size: 13px;
+    }
+    .order-info small {
+      color: var(--muted);
+      font-size: 11px;
+    }
+    .order-price {
+      font-weight: 800;
+      color: var(--purple);
+      font-size: 13px;
+    }
+    .search-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .search-tag {
+      background: #f4f2fc;
+      border: 1px solid #e8e4fb;
+      color: #5548c7;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .search-tag:hover {
+      background: var(--purple);
+      color: white;
+    }
+    .ai-reason-chip {
+      display: block;
+      background: #f1eeff;
+      color: #5844d1;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin: 6px 0;
+    }
+    .compromise-tool-card {
+      background: #fcfbfe;
+      border: 1px solid #e3dff7;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> ShopMind <b>AI</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chat.html">Chat</a>
+      <a href="products.html">Products</a>
+      <a href="compare.html">Compare</a>
+      <a class="active" href="profile.html">Preferences</a>
+    </nav>
+    <a class="header-cta" href="index.html#assistant">Ask AI ↗</a>
+  </header>
+
+  <main class="page-wrap" style="max-width: 1200px;">
+    <div class="eyebrow">BUYER INTELLIGENCE & PERSONALIZATION</div>
+    <h1>Buyer Preferences & <span>AI Recommendations.</span></h1>
+    <p class="muted">ShopMind's AI Agent synthesizes your past order list, browsing searches, and priority settings to curate tailored recommendations and smart budget matches.</p>
+
+    <div class="profile-dashboard">
+      <!-- LEFT COLUMN: USER PROFILE & SETTINGS -->
+      <div class="profile-sidebar">
+        <!-- USER PROFILE CARD -->
+        <div class="user-card">
+          <div class="user-header-info">
+            <div class="user-avatar-circle" id="userAvatar">🧑‍💻</div>
+            <div>
+              <b id="userNameDisplay" style="font-size:18px;">Alex Chen</b>
+              <div id="userEmailDisplay" style="color:var(--muted);font-size:12px;">buyer@shopmind.ai</div>
+              <span class="persona-badge" id="aiPersonaBadge">AI Persona: Productivity Pro</span>
+            </div>
+          </div>
+          <p id="personaDesc" style="font-size:12px;color:var(--muted);line-height:1.5;margin:0 0 10px;">You prioritize computing power, desktop ergonomics, and dependable workflows.</p>
+
+          <div class="stat-row">
+            <div class="stat-box">
+              <b id="orderCountStat">2</b>
+              <small>Past Orders</small>
+            </div>
+            <div class="stat-box">
+              <b id="searchCountStat">4</b>
+              <small>Recent Searches</small>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:8px;">
+            <a href="login.html" class="button" style="flex:1;font-size:11px;text-align:center;">Switch Account</a>
+            <button class="button" style="flex:1;font-size:11px;" id="btnSimulateOrder">+ Place Test Order</button>
+          </div>
+        </div>
+
+        <!-- PREFERENCES FORM -->
+        <form id="preferencesForm" class="user-card">
+          <h3 style="margin-top:0;font-size:15px;">⚙️ Shopping Preferences</h3>
+          <label for="budget" style="font-size:11px;font-weight:700;display:block;margin-top:12px;">Usual budget (₹)</label>
+          <input id="budget" type="number" min="0" placeholder="e.g. 65000" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;margin-top:4px;">
+          
+          <label for="categories" style="font-size:11px;font-weight:700;display:block;margin-top:12px;">Favourite category</label>
+          <select id="categories" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;margin-top:4px;">
+            <option value="">Choose category</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Phone">Phone</option>
+            <option value="Headphones">Headphones</option>
+            <option value="Monitor">Monitor</option>
+            <option value="Keyboard">Keyboard</option>
+            <option value="Mouse">Mouse</option>
+            <option value="Smartwatch">Smartwatch</option>
+            <option value="Camera">Camera</option>
+            <option value="Speaker">Speaker</option>
+            <option value="Tablet">Tablet</option>
+          </select>
+
+          <label for="brands" style="font-size:11px;font-weight:700;display:block;margin-top:12px;">Preferred brands</label>
+          <input id="brands" placeholder="e.g. Aster, NovaTech, KeyCraft" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;margin-top:4px;">
+
+          <label for="priorities" style="font-size:11px;font-weight:700;display:block;margin-top:12px;">What matters most?</label>
+          <select id="priorities" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;margin-top:4px;">
+            <option value="value">Value for money</option>
+            <option value="performance">Performance & Power</option>
+            <option value="battery">Battery life</option>
+            <option value="camera">Camera & Display</option>
+            <option value="design">Ergonomics & Build</option>
+          </select>
+
+          <div style="margin-top:18px;display:flex;align-items:center;gap:8px;">
+            <button class="button primary" type="submit" style="flex:1;">Save & Update AI</button>
+            <button class="button" type="button" id="resetPreferences">Reset</button>
+          </div>
+          <span id="saveStatus" class="success" style="display:block;margin-top:8px;" role="status"></span>
+        </form>
+
+        <!-- SEARCH HISTORY CARD -->
+        <div class="history-card">
+          <h3>
+            <span>🔍 Recent Search History</span>
+            <button id="clearSearchHistory" style="border:none;background:none;color:var(--purple);font-size:11px;cursor:pointer;font-weight:700;">Clear</button>
+          </h3>
+          <p style="font-size:11px;color:var(--muted);margin:0 0 10px;">The AI Agent analyzes these queries to discover your emerging interests.</p>
+          <div class="search-tags" id="searchHistoryContainer">
+            <!-- Dynamic search history chips -->
+          </div>
+        </div>
+
+        <!-- ORDER HISTORY CARD -->
+        <div class="history-card">
+          <h3>
+            <span>📦 Order History (Purchases)</span>
+            <small id="orderCountHeader" style="color:var(--muted);font-size:12px;"></small>
+          </h3>
+          <p style="font-size:11px;color:var(--muted);margin:0 0 10px;">Past purchases inform your brand loyalty and tech ecosystem matches.</p>
+          <div id="orderListContainer">
+            <!-- Dynamic order list -->
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: AI RECOMMENDATIONS & SMART BUDGET COMPROMISE FINDER -->
+      <div>
+        <!-- AI RECOMMENDATIONS SECTION -->
+        <div class="ai-rec-banner">
+          <h3>✦ AI Curated Recommendations For You</h3>
+          <p id="aiRecBannerText">Synthesized by ShopMind AI based on your past orders, search history, and budget preferences.</p>
+        </div>
+
+        <div id="aiRecommendationsContainer" class="product-grid" style="margin-top:0;">
+          <div class="empty-state">Synthesizing personalized AI recommendations...</div>
+        </div>
+
+        <!-- SMART BUDGET & FEATURE COMPROMISE FINDER -->
+        <div class="compromise-tool-card" style="margin-top:34px;">
+          <div class="eyebrow" style="color:var(--purple);">FEATURE 4 · SMART AI BUDGET ASSISTANT</div>
+          <h2 style="font-size:22px;margin:8px 0 12px;">Smart Budget & Feature Compromise Finder</h2>
+          <p class="muted" style="font-size:12px;margin-bottom:18px;">Looking for extra features within a budget? If the exact combination is above your price, our AI will find high-value alternatives with balanced features at the correct price rather than returning "no products found"!</p>
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:12px;margin-bottom:14px;">
+            <div>
+              <label style="font-size:11px;font-weight:700;display:block;margin-bottom:4px;">Category</label>
+              <select id="compCategory" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;">
+                <option value="Laptop">Laptop</option>
+                <option value="Phone">Phone</option>
+                <option value="Headphones">Headphones</option>
+                <option value="Monitor">Monitor</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:11px;font-weight:700;display:block;margin-bottom:4px;">Strict Budget (₹)</label>
+              <input id="compBudget" type="number" value="45000" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;">
+            </div>
+            <div>
+              <label style="font-size:11px;font-weight:700;display:block;margin-bottom:4px;">Desired Extra Features</label>
+              <input id="compFeatures" placeholder="e.g. 32GB RAM, Core i7, 4K" value="32GB RAM, Core i7" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;font-size:12px;">
+            </div>
+          </div>
+          <button class="button primary" id="btnFindCompromise" style="width:100%;padding:12px;font-size:12px;">✦ AI Find Best Budget Compromise</button>
+
+          <div id="compromiseResultWrap" style="margin-top:18px;display:none;">
+            <div id="compromiseExplanation" style="background:#f4f2fc;padding:14px 18px;border-radius:12px;font-size:12px;line-height:1.6;color:#39364f;margin-bottom:16px;"></div>
+            <div id="compromiseProductsGrid" class="product-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">ShopMind <b>AI</b></a>
+    <span>Shop thoughtfully. Choose confidently.</span>
+    <span>© <span id="year"></span> ShopMind AI</span>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/profile.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

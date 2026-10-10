@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Products Catalogue — ShopMind AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/products.css">
+  <style>
+    .smart-compromise-banner {
+      background: #f4f2fc;
+      border: 1px solid #e2ddf8;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .smart-compromise-banner h4 {
+      margin: 0 0 4px;
+      font-size: 15px;
+      color: var(--purple);
+    }
+    .smart-compromise-banner p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .buy-btn-small {
+      background: var(--purple);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .buy-btn-small:hover {
+      background: var(--purple-dark);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> ShopMind <b>AI</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chat.html">Chat</a>
+      <a class="active" href="products.html">Products</a>
+      <a href="compare.html">Compare</a>
+      <a href="profile.html">Preferences</a>
+    </nav>
+    <a class="header-cta" href="index.html#assistant">Ask AI ↗</a>
+  </header>
+
+  <main class="page-wrap">
+    <div class="eyebrow">THE SHOPMIND CATALOGUE</div>
+    <h1>Find something <span>great.</span></h1>
+    <p class="muted">Explore specific high-definition products, filter by budget, and simulate orders to guide your personalized AI recommendations.</p>
+    
+    <div class="toolbar">
+      <input id="productSearch" placeholder="Search products, brands, features (e.g. 16GB RAM, Studio, Noise Cancelling)…">
+      <select id="categoryFilter"><option value="">All categories</option></select>
+      <select id="maxPriceFilter">
+        <option value="">Any budget</option>
+        <option value="20000">Under ₹20,000</option>
+        <option value="50000">Under ₹50,000</option>
+        <option value="80000">Under ₹80,000</option>
+        <option value="120000">Under ₹1,20,000</option>
+      </select>
+      <select id="sortFilter">
+        <option value="recommended">Recommended</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="rating">Highest rated</option>
+      </select>
+    </div>
+
+    <div class="catalogue-meta" id="productCount">Loading products…</div>
+
+    <!-- ZERO RESULTS SMART COMPROMISE NOTIFICATION -->
+    <div id="smartCompromiseBox" class="smart-compromise-banner" style="display:none;">
+      <div>
+        <h4>💡 Strict filters returned no exact matches?</h4>
+        <p>Our AI can find smart alternative products that fit within your budget with balanced features.</p>
+      </div>
+      <button id="btnTriggerCompromise" class="button primary" style="font-size:11px;">✦ AI Find Budget Alternatives</button>
+    </div>
+
+    <section id="productContainer" class="product-grid">
+      <div class="empty-state">Loading catalogue…</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">ShopMind <b>AI</b></a>
+    <span>© <span id="year"></span> ShopMind AI</span>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/products.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

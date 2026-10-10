@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat with ShopMind AI — Smart Assistant</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> ShopMind <b>AI</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chat.html" class="active">Chat</a>
+      <a href="products.html">Products</a>
+      <a href="compare.html">Compare</a>
+      <a href="profile.html">Preferences</a>
+    </nav>
+    <a class="header-cta" href="products.html">Explore products ↗</a>
+  </header>
+
+  <main class="assistant-section" style="max-width:920px;margin:0 auto;padding:48px 22px 80px;">
+    <div class="eyebrow">YOUR PERSONAL AI SHOPPING ASSISTANT</div>
+    <h1 style="font-size:clamp(34px,5vw,52px);margin:12px 0 16px;">Let's find your <span>perfect match.</span></h1>
+    <p class="muted">Tell ShopMind what you need, your exact budget, and required features. If a requested feature exceeds your budget, our AI agent will find high-value alternatives with smart compromises instead of saying no products found!</p>
+
+    <div class="chat-panel">
+      <div class="chat-head">
+        <span class="brand-mark">✦</span>
+        <div><b>ShopMind Assistant</b><small>Intelligent Buyer & Budget Guide</small></div>
+        <span class="online">●</span>
+      </div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite">
+        <div class="message-row"><div class="bubble">Hey there! 👋 Tell me what product you're looking for, your budget, or any specific extra features (e.g. 32GB RAM, 4K monitor, noise cancellation). I'll find you the best matching choices!</div></div>
+      </div>
+      <div class="suggestions">
+        <button type="button" data-prompt="I need a laptop with 32GB RAM under ₹45,000">💡 Laptop 32GB RAM under ₹45k (Smart Compromise)</button>
+        <button type="button" data-prompt="Phone with 512GB storage and 12GB RAM under ₹40,000">💡 Phone 512GB under ₹40k</button>
+        <button type="button" data-prompt="Compare phones with a great camera">Camera phones comparison</button>
+        <button type="button" data-prompt="Find wireless noise cancelling headphones under ₹10,000">ANC headphones under ₹10k</button>
+      </div>
+      <form id="chatForm" class="composer">
+        <input id="chatInput" type="text" placeholder="Ask about a product, budget, or feature (e.g. Laptop with 32GB RAM under ₹45,000)…" autocomplete="off" required>
+        <button type="submit" aria-label="Send message">↑</button>
+      </form>
+      <p id="connectionNote" class="note"></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">ShopMind <b>AI</b></a>
+    <span>Shop thoughtfully. Choose confidently.</span>
+    <span>© <span id="year"></span> ShopMind AI</span>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/chat.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ShopMind AI — Smart Shopping & AI Recommendations</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> ShopMind <b>AI</b></a>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="chat.html">Chat</a>
+      <a href="products.html">Products</a>
+      <a href="compare.html">Compare</a>
+      <a href="profile.html">Preferences</a>
+    </nav>
+    <a class="header-cta" href="products.html">Explore products ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">YOUR PERSONAL AI SHOPPING ASSISTANT</div>
+        <h1>Find your next<br><span>favourite thing.</span></h1>
+        <p class="muted">Less scrolling. Better choices. Tell ShopMind what you need and get tailored recommendations that fit your budget and preferences with smart trade-offs.</p>
+        <div class="actions">
+          <a class="button primary" href="chat.html">Ask ShopMind ↗</a>
+          <a class="button" href="products.html">Browse catalogue</a>
+          <a class="button" href="login.html">Buyer Sign In</a>
+        </div>
+        <p class="muted small">✦ Personalized recommendations shaped by your order & search history</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-symbol">✦</div>
+        <div class="hero-card">
+          <div class="device">⌁</div>
+          <b>A smarter way<br>to shop.</b>
+        </div>
+        <div class="float-chip">♡ Made for you</div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div><strong>⌕ Search naturally</strong><small>Describe what you need</small></div>
+      <div><strong>⇄ Compare clearly</strong><small>See the differences</small></div>
+      <div><strong>💡 Smart Budget Fit</strong><small>AI compromises when out of budget</small></div>
+      <div><strong>♡ Shop your way</strong><small>Use your order & search preferences</small></div>
+    </section>
+
+    <section class="assistant-section" id="assistant">
+      <div class="eyebrow">LET'S FIND YOUR MATCH</div>
+      <h2>What are you shopping for?</h2>
+      <div class="chat-panel">
+        <div class="chat-head">
+          <span class="brand-mark">✦</span>
+          <div><b>ShopMind Assistant</b><small>Your personal product & budget guide</small></div>
+          <span class="online">●</span>
+        </div>
+        <div class="chat-messages" id="chatMessages" aria-live="polite">
+          <div class="message-row">
+            <div class="bubble">Hey there! 👋 Tell me what you're looking for, your budget, or any extra features. If a feature is above budget, I'll find the best smart compromise for you!</div>
+          </div>
+        </div>
+        <div class="suggestions">
+          <button type="button" data-prompt="I want a laptop with 32GB RAM under ₹45,000">💡 Laptop 32GB under ₹45k (Compromise)</button>
+          <button type="button" data-prompt="Recommend a laptop under ₹60,000 for programming">Laptop under ₹60k</button>
+          <button type="button" data-prompt="Compare phones with a great camera">Camera phones</button>
+          <button type="button" data-prompt="Find wireless headphones for studying">Study headphones</button>
+        </div>
+        <form id="chatForm" class="composer">
+          <input id="chatInput" placeholder="Ask about a product, budget, or feature…" required>
+          <button type="submit">↑</button>
+        </form>
+        <p id="connectionNote" class="note"></p>
+      </div>
+    </section>
+
+    <section class="bottom-cta">
+      <div>
+        <div class="eyebrow">YOUR NEXT GREAT FIND</div>
+        <h2>Good choices start with the right question.</h2>
+      </div>
+      <a class="button light" href="products.html">Explore products ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">ShopMind <b>AI</b></a>
+    <span>Shop thoughtfully. Choose confidently.</span>
+    <span>© <span id="year"></span> ShopMind AI</span>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/chat.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

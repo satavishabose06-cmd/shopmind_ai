@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Compare Products — ShopMind AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> ShopMind <b>AI</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chat.html">Chat</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="compare.html">Compare</a>
+      <a href="profile.html">Preferences</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <div class="eyebrow">SIDE-BY-SIDE CLARITY</div>
+    <h1>Compare your <span>shortlist.</span></h1>
+    <p class="muted">Select products in the catalogue and compare key specifications, prices, and value ratings side by side.</p>
+    <p>
+      <a class="button primary" href="products.html">+ Add products</a> 
+      <button class="button" id="clearCompare">Clear shortlist</button>
+    </p>
+    <div id="compareContainer" class="compare-container">
+      <div class="empty-state">Your shortlist is empty. Visit Products and select Compare.</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">ShopMind <b>AI</b></a>
+    <span>© <span id="year"></span> ShopMind AI</span>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/compare.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

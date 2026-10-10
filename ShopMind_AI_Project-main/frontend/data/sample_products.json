@@ -1,0 +1,1682 @@
+[
+  {
+    "product_id": "LAP001",
+    "name": "NovaTech StudyBook A",
+    "category": "Laptop",
+    "brand": "NovaTech",
+    "price": 110900,
+    "rating": 4.1,
+    "description": "Sample laptop for study, coding and everyday productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "Intel Core i5",
+      "ram_gb": 16,
+      "storage_gb": 512
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP002",
+    "name": "Aster ProBook",
+    "category": "Laptop",
+    "brand": "Aster",
+    "price": 66900,
+    "rating": 4.8,
+    "description": "Sample laptop for software development and multitasking. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "AMD Ryzen 7",
+      "ram_gb": 16,
+      "storage_gb": 1024
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP003",
+    "name": "Orbit CreatorBook",
+    "category": "Laptop",
+    "brand": "Orbit",
+    "price": 111800,
+    "rating": 4.4,
+    "description": "Sample laptop for creative work and content editing. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "Intel Core i7",
+      "ram_gb": 32,
+      "storage_gb": 1024
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP004",
+    "name": "Vertex AirBook A",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "price": 90900,
+    "rating": 4.4,
+    "description": "Sample laptop for portable work and travel. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "AMD Ryzen 5",
+      "ram_gb": 8,
+      "storage_gb": 512
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP005",
+    "name": "PixelForge PowerBook",
+    "category": "Laptop",
+    "brand": "PixelForge",
+    "price": 111400,
+    "rating": 4.7,
+    "description": "Sample laptop for performance-focused workflows. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "Intel Core Ultra 5",
+      "ram_gb": 16,
+      "storage_gb": 512
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP006",
+    "name": "NovaTech FlexBook",
+    "category": "Laptop",
+    "brand": "NovaTech",
+    "price": 34800,
+    "rating": 4.6,
+    "description": "Sample laptop for study, coding and everyday productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "Intel Core i5",
+      "ram_gb": 16,
+      "storage_gb": 512
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP007",
+    "name": "Aster WorkMate A",
+    "category": "Laptop",
+    "brand": "Aster",
+    "price": 36600,
+    "rating": 4.2,
+    "description": "Sample laptop for software development and multitasking. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "AMD Ryzen 7",
+      "ram_gb": 16,
+      "storage_gb": 1024
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP008",
+    "name": "Orbit UltraBook",
+    "category": "Laptop",
+    "brand": "Orbit",
+    "price": 64600,
+    "rating": 4.9,
+    "description": "Sample laptop for creative work and content editing. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "Intel Core i7",
+      "ram_gb": 32,
+      "storage_gb": 1024
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP009",
+    "name": "Vertex EdgeBook",
+    "category": "Laptop",
+    "brand": "Vertex",
+    "price": 98200,
+    "rating": 3.9,
+    "description": "Sample laptop for portable work and travel. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "AMD Ryzen 5",
+      "ram_gb": 8,
+      "storage_gb": 512
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "LAP010",
+    "name": "PixelForge StudioBook A",
+    "category": "Laptop",
+    "brand": "PixelForge",
+    "price": 45000,
+    "rating": 3.8,
+    "description": "Sample laptop for performance-focused workflows. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▱",
+    "specifications": {
+      "processor": "Intel Core Ultra 5",
+      "ram_gb": 16,
+      "storage_gb": 512
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN001",
+    "name": "PixelOne One A",
+    "category": "Phone",
+    "brand": "PixelOne",
+    "price": 69000,
+    "rating": 3.6,
+    "description": "Sample phone with a bright display and versatile camera. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "display": "6.5-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN002",
+    "name": "Orion Plus",
+    "category": "Phone",
+    "brand": "Orion",
+    "price": 97600,
+    "rating": 4.0,
+    "description": "Sample phone for everyday multitasking and communication. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "display": "6.7-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN003",
+    "name": "NovaMobile Pro",
+    "category": "Phone",
+    "brand": "NovaMobile",
+    "price": 84100,
+    "rating": 3.9,
+    "description": "Sample phone with ample storage for apps and photos. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "display": "6.6-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN004",
+    "name": "Aster Max A",
+    "category": "Phone",
+    "brand": "Aster",
+    "price": 83200,
+    "rating": 4.1,
+    "description": "Sample phone for streaming, photography and daily use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "display": "6.8-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN005",
+    "name": "ZenMobile Neo",
+    "category": "Phone",
+    "brand": "ZenMobile",
+    "price": 57500,
+    "rating": 3.8,
+    "description": "Sample phone with a bright display and versatile camera. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1575695342320-d2d2d2f9b73f?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "display": "6.4-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN006",
+    "name": "PixelOne Ultra",
+    "category": "Phone",
+    "brand": "PixelOne",
+    "price": 77500,
+    "rating": 3.6,
+    "description": "Sample phone for everyday multitasking and communication. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 8,
+      "storage_gb": 128,
+      "display": "6.5-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN007",
+    "name": "Orion Air A",
+    "category": "Phone",
+    "brand": "Orion",
+    "price": 19000,
+    "rating": 4.8,
+    "description": "Sample phone with ample storage for apps and photos. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 8,
+      "storage_gb": 256,
+      "display": "6.7-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN008",
+    "name": "NovaMobile Note",
+    "category": "Phone",
+    "brand": "NovaMobile",
+    "price": 79400,
+    "rating": 4.8,
+    "description": "Sample phone for streaming, photography and daily use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 12,
+      "storage_gb": 256,
+      "display": "6.6-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN009",
+    "name": "Aster Prime",
+    "category": "Phone",
+    "brand": "Aster",
+    "price": 27100,
+    "rating": 3.7,
+    "description": "Sample phone with a bright display and versatile camera. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 12,
+      "storage_gb": 512,
+      "display": "6.8-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "PHN010",
+    "name": "ZenMobile Edge A",
+    "category": "Phone",
+    "brand": "ZenMobile",
+    "price": 41400,
+    "rating": 3.9,
+    "description": "Sample phone for everyday multitasking and communication. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▯",
+    "specifications": {
+      "ram_gb": 6,
+      "storage_gb": 128,
+      "display": "6.4-inch"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD001",
+    "name": "QuietTone QuietTone A",
+    "category": "Headphones",
+    "brand": "QuietTone",
+    "price": 1300,
+    "rating": 4.4,
+    "description": "Sample headphones with comfortable cushions for long listening sessions. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": true,
+      "battery_hours": 30
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD002",
+    "name": "SonicArc StudioWave",
+    "category": "Headphones",
+    "brand": "SonicArc",
+    "price": 5300,
+    "rating": 4.2,
+    "description": "Sample headphones for music, calls and focused study. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": false,
+      "battery_hours": 24
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD003",
+    "name": "NovaSound BassPro",
+    "category": "Headphones",
+    "brand": "NovaSound",
+    "price": 21000,
+    "rating": 4.7,
+    "description": "Sample headphones with wireless convenience for commuting. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": true,
+      "battery_hours": 40
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD004",
+    "name": "EchoPeak FocusPods A",
+    "category": "Headphones",
+    "brand": "EchoPeak",
+    "price": 8400,
+    "rating": 4.2,
+    "description": "Sample headphones with a balanced sound profile for everyday use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": false,
+      "noise_cancellation": false,
+      "connection": "3.5mm"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD005",
+    "name": "Aster Audio TravelBeat",
+    "category": "Headphones",
+    "brand": "Aster Audio",
+    "price": 3400,
+    "rating": 4.5,
+    "description": "Sample headphones with comfortable cushions for long listening sessions. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": true,
+      "battery_hours": 30
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD006",
+    "name": "QuietTone SoundFlex",
+    "category": "Headphones",
+    "brand": "QuietTone",
+    "price": 11100,
+    "rating": 3.7,
+    "description": "Sample headphones for music, calls and focused study. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1577174881658-0f30ed549adc?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": false,
+      "battery_hours": 24
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD007",
+    "name": "SonicArc PulseX A",
+    "category": "Headphones",
+    "brand": "SonicArc",
+    "price": 17500,
+    "rating": 4.3,
+    "description": "Sample headphones with wireless convenience for commuting. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1608156639585-b3a032ef9689?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": true,
+      "battery_hours": 40
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD008",
+    "name": "NovaSound ClearSound",
+    "category": "Headphones",
+    "brand": "NovaSound",
+    "price": 10800,
+    "rating": 4.0,
+    "description": "Sample headphones with a balanced sound profile for everyday use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": false,
+      "noise_cancellation": false,
+      "connection": "3.5mm"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD009",
+    "name": "EchoPeak AirBeat",
+    "category": "Headphones",
+    "brand": "EchoPeak",
+    "price": 2800,
+    "rating": 3.9,
+    "description": "Sample headphones with comfortable cushions for long listening sessions. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": true,
+      "battery_hours": 30
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "AUD010",
+    "name": "Aster Audio AudioMax A",
+    "category": "Headphones",
+    "brand": "Aster Audio",
+    "price": 12400,
+    "rating": 4.8,
+    "description": "Sample headphones for music, calls and focused study. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1585298723682-7115561c51b7?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "noise_cancellation": false,
+      "battery_hours": 24
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB001",
+    "name": "Slate Slate Mini A",
+    "category": "Tablet",
+    "brand": "Slate",
+    "price": 51000,
+    "rating": 4.2,
+    "description": "Sample tablet for digital notes, reading and online classes. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 128,
+      "ram_gb": 6,
+      "display_inches": 10.1
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB002",
+    "name": "NovaTab NoteTab",
+    "category": "Tablet",
+    "brand": "NovaTab",
+    "price": 38500,
+    "rating": 4.3,
+    "description": "Sample tablet for entertainment, browsing and everyday tasks. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 256,
+      "ram_gb": 8,
+      "display_inches": 11.0
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB003",
+    "name": "Orbit Tab Air",
+    "category": "Tablet",
+    "brand": "Orbit",
+    "price": 11300,
+    "rating": 4.4,
+    "description": "Sample tablet with a portable display for study and travel. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1589739900243-4b52cd9b104e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 64,
+      "ram_gb": 4,
+      "display_inches": 8.7
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB004",
+    "name": "Aster ReadMate A",
+    "category": "Tablet",
+    "brand": "Aster",
+    "price": 42800,
+    "rating": 3.9,
+    "description": "Sample tablet for sketching, reading and productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 256,
+      "ram_gb": 8,
+      "display_inches": 12.4
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB005",
+    "name": "PixelSlate CanvasTab",
+    "category": "Tablet",
+    "brand": "PixelSlate",
+    "price": 16600,
+    "rating": 4.5,
+    "description": "Sample tablet for digital notes, reading and online classes. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 128,
+      "ram_gb": 6,
+      "display_inches": 10.1
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB006",
+    "name": "Slate Tab Pro",
+    "category": "Tablet",
+    "brand": "Slate",
+    "price": 79700,
+    "rating": 4.7,
+    "description": "Sample tablet for entertainment, browsing and everyday tasks. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 256,
+      "ram_gb": 8,
+      "display_inches": 11.0
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB007",
+    "name": "NovaTab StudyTab A",
+    "category": "Tablet",
+    "brand": "NovaTab",
+    "price": 21000,
+    "rating": 4.8,
+    "description": "Sample tablet with a portable display for study and travel. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 64,
+      "ram_gb": 4,
+      "display_inches": 8.7
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB008",
+    "name": "Orbit MediaTab",
+    "category": "Tablet",
+    "brand": "Orbit",
+    "price": 22900,
+    "rating": 4.7,
+    "description": "Sample tablet for sketching, reading and productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1589739900243-4b52cd9b104e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 256,
+      "ram_gb": 8,
+      "display_inches": 12.4
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB009",
+    "name": "Aster FlexTab",
+    "category": "Tablet",
+    "brand": "Aster",
+    "price": 52200,
+    "rating": 4.4,
+    "description": "Sample tablet for digital notes, reading and online classes. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 128,
+      "ram_gb": 6,
+      "display_inches": 10.1
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "TAB010",
+    "name": "PixelSlate Tab Plus A",
+    "category": "Tablet",
+    "brand": "PixelSlate",
+    "price": 18600,
+    "rating": 4.4,
+    "description": "Sample tablet for entertainment, browsing and everyday tasks. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▤",
+    "specifications": {
+      "storage_gb": 256,
+      "ram_gb": 8,
+      "display_inches": 11.0
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON001",
+    "name": "ViewPoint VisionView A",
+    "category": "Monitor",
+    "brand": "ViewPoint",
+    "price": 49700,
+    "rating": 4.4,
+    "description": "Sample monitor for a productive home-office setup. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "1920x1080",
+      "refresh_rate_hz": 75,
+      "size_inches": 24
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON002",
+    "name": "Aster Vision WorkScreen",
+    "category": "Monitor",
+    "brand": "Aster Vision",
+    "price": 17000,
+    "rating": 4.8,
+    "description": "Sample monitor with crisp visuals for work and entertainment. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1585792180666-f7547c67f8b1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "2560x1440",
+      "refresh_rate_hz": 144,
+      "size_inches": 27
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON003",
+    "name": "Orbit Display ColorPro",
+    "category": "Monitor",
+    "brand": "Orbit Display",
+    "price": 31600,
+    "rating": 4.0,
+    "description": "Sample monitor for coding, documents and multitasking. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "3840x2160",
+      "refresh_rate_hz": 60,
+      "size_inches": 32
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON004",
+    "name": "NovaView UltraView A",
+    "category": "Monitor",
+    "brand": "NovaView",
+    "price": 44000,
+    "rating": 4.5,
+    "description": "Sample monitor for an immersive desktop viewing experience. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "1920x1080",
+      "refresh_rate_hz": 100,
+      "size_inches": 27
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON005",
+    "name": "Vertex DeskMate",
+    "category": "Monitor",
+    "brand": "Vertex",
+    "price": 48900,
+    "rating": 4.6,
+    "description": "Sample monitor for a productive home-office setup. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1586776977607-310e9c725c37?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "1920x1080",
+      "refresh_rate_hz": 75,
+      "size_inches": 24
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON006",
+    "name": "ViewPoint StudioDisplay",
+    "category": "Monitor",
+    "brand": "ViewPoint",
+    "price": 15300,
+    "rating": 4.8,
+    "description": "Sample monitor with crisp visuals for work and entertainment. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "2560x1440",
+      "refresh_rate_hz": 144,
+      "size_inches": 27
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON007",
+    "name": "Aster Vision GameView A",
+    "category": "Monitor",
+    "brand": "Aster Vision",
+    "price": 35100,
+    "rating": 4.3,
+    "description": "Sample monitor for coding, documents and multitasking. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "3840x2160",
+      "refresh_rate_hz": 60,
+      "size_inches": 32
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON008",
+    "name": "Orbit Display ClearPanel",
+    "category": "Monitor",
+    "brand": "Orbit Display",
+    "price": 32300,
+    "rating": 4.1,
+    "description": "Sample monitor for an immersive desktop viewing experience. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "1920x1080",
+      "refresh_rate_hz": 100,
+      "size_inches": 27
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON009",
+    "name": "NovaView WideView",
+    "category": "Monitor",
+    "brand": "NovaView",
+    "price": 40200,
+    "rating": 4.6,
+    "description": "Sample monitor for a productive home-office setup. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "1920x1080",
+      "refresh_rate_hz": 75,
+      "size_inches": 24
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MON010",
+    "name": "Vertex FocusDisplay A",
+    "category": "Monitor",
+    "brand": "Vertex",
+    "price": 45700,
+    "rating": 4.6,
+    "description": "Sample monitor with crisp visuals for work and entertainment. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1585792180666-f7547c67f8b1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "▭",
+    "specifications": {
+      "resolution": "2560x1440",
+      "refresh_rate_hz": 144,
+      "size_inches": 27
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY001",
+    "name": "KeyCraft TypePro A",
+    "category": "Keyboard",
+    "brand": "KeyCraft",
+    "price": 4200,
+    "rating": 4.5,
+    "description": "Sample keyboard for comfortable daily typing and productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "full-size"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY002",
+    "name": "TypeFlow KeyBoard Air",
+    "category": "Keyboard",
+    "brand": "TypeFlow",
+    "price": 9800,
+    "rating": 3.7,
+    "description": "Sample keyboard with a compact layout for smaller desks. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "compact"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY003",
+    "name": "NovaKeys MechLite",
+    "category": "Keyboard",
+    "brand": "NovaKeys",
+    "price": 7500,
+    "rating": 3.8,
+    "description": "Sample keyboard for long coding and writing sessions. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": false,
+      "layout": "full-size",
+      "switch_type": "mechanical"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY004",
+    "name": "Aster Input OfficeKeys A",
+    "category": "Keyboard",
+    "brand": "Aster Input",
+    "price": 800,
+    "rating": 3.9,
+    "description": "Sample keyboard for a responsive desktop typing experience. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "tenkeyless"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY005",
+    "name": "Orbit QuietType",
+    "category": "Keyboard",
+    "brand": "Orbit",
+    "price": 6500,
+    "rating": 4.4,
+    "description": "Sample keyboard for comfortable daily typing and productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "full-size"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY006",
+    "name": "KeyCraft GameKeys",
+    "category": "Keyboard",
+    "brand": "KeyCraft",
+    "price": 1300,
+    "rating": 4.8,
+    "description": "Sample keyboard with a compact layout for smaller desks. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1541140532154-b024d705b909?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "compact"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY007",
+    "name": "TypeFlow CompactKeys A",
+    "category": "Keyboard",
+    "brand": "TypeFlow",
+    "price": 7500,
+    "rating": 4.3,
+    "description": "Sample keyboard for long coding and writing sessions. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": false,
+      "layout": "full-size",
+      "switch_type": "mechanical"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY008",
+    "name": "NovaKeys ErgoType",
+    "category": "Keyboard",
+    "brand": "NovaKeys",
+    "price": 2400,
+    "rating": 4.2,
+    "description": "Sample keyboard for a responsive desktop typing experience. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "tenkeyless"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY009",
+    "name": "Aster Input KeyFlex",
+    "category": "Keyboard",
+    "brand": "Aster Input",
+    "price": 2000,
+    "rating": 3.9,
+    "description": "Sample keyboard for comfortable daily typing and productivity. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "full-size"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "KEY010",
+    "name": "Orbit StudioKeys A",
+    "category": "Keyboard",
+    "brand": "Orbit",
+    "price": 9100,
+    "rating": 4.5,
+    "description": "Sample keyboard with a compact layout for smaller desks. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80",
+    "emoji": "⌨",
+    "specifications": {
+      "wireless": true,
+      "layout": "compact"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU001",
+    "name": "ClickPro ClickMate A",
+    "category": "Mouse",
+    "brand": "ClickPro",
+    "price": 6000,
+    "rating": 4.3,
+    "description": "Sample mouse for everyday navigation and office work. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 1600
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU002",
+    "name": "NovaPoint PrecisionX",
+    "category": "Mouse",
+    "brand": "NovaPoint",
+    "price": 2700,
+    "rating": 4.3,
+    "description": "Sample mouse with a comfortable shape for extended use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": false,
+      "dpi": 3200
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU003",
+    "name": "Orbit Input TravelMouse",
+    "category": "Mouse",
+    "brand": "Orbit Input",
+    "price": 6600,
+    "rating": 4.1,
+    "description": "Sample mouse for precise control while working or studying. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 4000
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU004",
+    "name": "Aster ErgoClick A",
+    "category": "Mouse",
+    "brand": "Aster",
+    "price": 4800,
+    "rating": 4.7,
+    "description": "Sample mouse with a portable design for laptop users. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 8000
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU005",
+    "name": "Vertex SwiftPoint",
+    "category": "Mouse",
+    "brand": "Vertex",
+    "price": 4800,
+    "rating": 3.6,
+    "description": "Sample mouse for everyday navigation and office work. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 1600
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU006",
+    "name": "ClickPro GameClick",
+    "category": "Mouse",
+    "brand": "ClickPro",
+    "price": 7800,
+    "rating": 4.5,
+    "description": "Sample mouse with a comfortable shape for extended use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": false,
+      "dpi": 3200
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU007",
+    "name": "NovaPoint SilentMouse A",
+    "category": "Mouse",
+    "brand": "NovaPoint",
+    "price": 2200,
+    "rating": 4.4,
+    "description": "Sample mouse for precise control while working or studying. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 4000
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU008",
+    "name": "Orbit Input AirMouse",
+    "category": "Mouse",
+    "brand": "Orbit Input",
+    "price": 6800,
+    "rating": 4.2,
+    "description": "Sample mouse with a portable design for laptop users. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 8000
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU009",
+    "name": "Aster ControlPro",
+    "category": "Mouse",
+    "brand": "Aster",
+    "price": 2500,
+    "rating": 4.1,
+    "description": "Sample mouse for everyday navigation and office work. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": true,
+      "dpi": 1600
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "MOU010",
+    "name": "Vertex DeskClick A",
+    "category": "Mouse",
+    "brand": "Vertex",
+    "price": 1200,
+    "rating": 3.7,
+    "description": "Sample mouse with a comfortable shape for extended use. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80",
+    "emoji": "🖱",
+    "specifications": {
+      "wireless": false,
+      "dpi": 3200
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT001",
+    "name": "PulseTrack Pulse One A",
+    "category": "Smartwatch",
+    "brand": "PulseTrack",
+    "price": 32300,
+    "rating": 4.5,
+    "description": "Sample smartwatch for activity tracking and everyday notifications. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 7,
+      "gps": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT002",
+    "name": "NovaWear ActiveFit",
+    "category": "Smartwatch",
+    "brand": "NovaWear",
+    "price": 12800,
+    "rating": 4.4,
+    "description": "Sample smartwatch with fitness-focused features for daily routines. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 10,
+      "gps": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT003",
+    "name": "Orbit Fit TimePro",
+    "category": "Smartwatch",
+    "brand": "Orbit Fit",
+    "price": 17600,
+    "rating": 4.0,
+    "description": "Sample smartwatch for a connected lifestyle and convenient alerts. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 5,
+      "gps": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT004",
+    "name": "Aster Time TrackAir A",
+    "category": "Smartwatch",
+    "brand": "Aster Time",
+    "price": 15100,
+    "rating": 4.6,
+    "description": "Sample smartwatch with a lightweight design for everyday wear. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": false,
+      "battery_days": 6,
+      "gps": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT005",
+    "name": "ZenFit MoveWatch",
+    "category": "Smartwatch",
+    "brand": "ZenFit",
+    "price": 33200,
+    "rating": 4.0,
+    "description": "Sample smartwatch for activity tracking and everyday notifications. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 7,
+      "gps": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT006",
+    "name": "PulseTrack FitEdge",
+    "category": "Smartwatch",
+    "brand": "PulseTrack",
+    "price": 8100,
+    "rating": 4.7,
+    "description": "Sample smartwatch with fitness-focused features for daily routines. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 10,
+      "gps": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT007",
+    "name": "NovaWear SportTime A",
+    "category": "Smartwatch",
+    "brand": "NovaWear",
+    "price": 16200,
+    "rating": 4.4,
+    "description": "Sample smartwatch for a connected lifestyle and convenient alerts. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 5,
+      "gps": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT008",
+    "name": "Orbit Fit DailyFit",
+    "category": "Smartwatch",
+    "brand": "Orbit Fit",
+    "price": 23200,
+    "rating": 4.0,
+    "description": "Sample smartwatch with a lightweight design for everyday wear. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": false,
+      "battery_days": 6,
+      "gps": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT009",
+    "name": "Aster Time Watch Plus",
+    "category": "Smartwatch",
+    "brand": "Aster Time",
+    "price": 27000,
+    "rating": 4.5,
+    "description": "Sample smartwatch for activity tracking and everyday notifications. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 7,
+      "gps": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "WAT010",
+    "name": "ZenFit VitalTrack A",
+    "category": "Smartwatch",
+    "brand": "ZenFit",
+    "price": 14100,
+    "rating": 3.8,
+    "description": "Sample smartwatch with fitness-focused features for daily routines. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◷",
+    "specifications": {
+      "water_resistant": true,
+      "battery_days": 10,
+      "gps": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM001",
+    "name": "FrameWorks FrameShot A",
+    "category": "Camera",
+    "brand": "FrameWorks",
+    "price": 106100,
+    "rating": 4.5,
+    "description": "Sample camera for travel photography and everyday moments. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 24,
+      "video": "4K",
+      "lens_mount": "interchangeable"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM002",
+    "name": "NovaCam CreatorCam",
+    "category": "Camera",
+    "brand": "NovaCam",
+    "price": 57600,
+    "rating": 4.3,
+    "description": "Sample camera for creative photography and video projects. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 20,
+      "video": "4K",
+      "lens_mount": "fixed"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM003",
+    "name": "Aster Imaging TravelCam",
+    "category": "Camera",
+    "brand": "Aster Imaging",
+    "price": 107000,
+    "rating": 4.1,
+    "description": "Sample camera with flexible controls for hobby photographers. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 32,
+      "video": "4K",
+      "lens_mount": "interchangeable"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM004",
+    "name": "Orbit Photo FocusPro A",
+    "category": "Camera",
+    "brand": "Orbit Photo",
+    "price": 60400,
+    "rating": 4.3,
+    "description": "Sample camera for capturing portraits, landscapes and events. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 24,
+      "video": "1080p",
+      "lens_mount": "fixed"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM005",
+    "name": "PixelShot SnapMate",
+    "category": "Camera",
+    "brand": "PixelShot",
+    "price": 126400,
+    "rating": 4.7,
+    "description": "Sample camera for travel photography and everyday moments. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 24,
+      "video": "4K",
+      "lens_mount": "interchangeable"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM006",
+    "name": "FrameWorks StudioCam",
+    "category": "Camera",
+    "brand": "FrameWorks",
+    "price": 21000,
+    "rating": 4.5,
+    "description": "Sample camera for creative photography and video projects. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 20,
+      "video": "4K",
+      "lens_mount": "fixed"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM007",
+    "name": "NovaCam ZoomX A",
+    "category": "Camera",
+    "brand": "NovaCam",
+    "price": 119400,
+    "rating": 3.8,
+    "description": "Sample camera with flexible controls for hobby photographers. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 32,
+      "video": "4K",
+      "lens_mount": "interchangeable"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM008",
+    "name": "Aster Imaging PocketCam",
+    "category": "Camera",
+    "brand": "Aster Imaging",
+    "price": 139000,
+    "rating": 4.0,
+    "description": "Sample camera for capturing portraits, landscapes and events. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 24,
+      "video": "1080p",
+      "lens_mount": "fixed"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM009",
+    "name": "Orbit Photo VisionPro",
+    "category": "Camera",
+    "brand": "Orbit Photo",
+    "price": 112000,
+    "rating": 4.2,
+    "description": "Sample camera for travel photography and everyday moments. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 24,
+      "video": "4K",
+      "lens_mount": "interchangeable"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "CAM010",
+    "name": "PixelShot CaptureOne A",
+    "category": "Camera",
+    "brand": "PixelShot",
+    "price": 84900,
+    "rating": 4.4,
+    "description": "Sample camera for creative photography and video projects. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
+    "emoji": "◎",
+    "specifications": {
+      "sensor_mp": 20,
+      "video": "4K",
+      "lens_mount": "fixed"
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK001",
+    "name": "EchoPeak RoomSound A",
+    "category": "Speaker",
+    "brand": "EchoPeak",
+    "price": 11600,
+    "rating": 4.6,
+    "description": "Sample speaker for music at home or at your desk. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 12,
+      "water_resistant": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK002",
+    "name": "NovaSound MiniBoom",
+    "category": "Speaker",
+    "brand": "NovaSound",
+    "price": 6300,
+    "rating": 3.8,
+    "description": "Sample speaker with portable sound for travel and gatherings. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 8,
+      "water_resistant": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK003",
+    "name": "Aster Audio BassBox",
+    "category": "Speaker",
+    "brand": "Aster Audio",
+    "price": 16400,
+    "rating": 4.2,
+    "description": "Sample speaker for podcasts, calls and everyday listening. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": false,
+      "power_w": 20
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK004",
+    "name": "Orbit Sound SoundPod A",
+    "category": "Speaker",
+    "brand": "Orbit Sound",
+    "price": 4500,
+    "rating": 3.6,
+    "description": "Sample speaker with a compact design and simple controls. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 16,
+      "water_resistant": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK005",
+    "name": "SonicArc PartyBeat",
+    "category": "Speaker",
+    "brand": "SonicArc",
+    "price": 15800,
+    "rating": 4.2,
+    "description": "Sample speaker for music at home or at your desk. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 12,
+      "water_resistant": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK006",
+    "name": "EchoPeak DeskSpeaker",
+    "category": "Speaker",
+    "brand": "EchoPeak",
+    "price": 1300,
+    "rating": 3.9,
+    "description": "Sample speaker with portable sound for travel and gatherings. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 8,
+      "water_resistant": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK007",
+    "name": "NovaSound WavePro A",
+    "category": "Speaker",
+    "brand": "NovaSound",
+    "price": 7600,
+    "rating": 4.3,
+    "description": "Sample speaker for podcasts, calls and everyday listening. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": false,
+      "power_w": 20
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK008",
+    "name": "Aster Audio PocketSound",
+    "category": "Speaker",
+    "brand": "Aster Audio",
+    "price": 14900,
+    "rating": 4.5,
+    "description": "Sample speaker with a compact design and simple controls. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 16,
+      "water_resistant": true
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK009",
+    "name": "Orbit Sound ClearTone",
+    "category": "Speaker",
+    "brand": "Orbit Sound",
+    "price": 19300,
+    "rating": 3.9,
+    "description": "Sample speaker for music at home or at your desk. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 12,
+      "water_resistant": false
+    },
+    "is_sample_data": true
+  },
+  {
+    "product_id": "SPK010",
+    "name": "SonicArc BeatBox A",
+    "category": "Speaker",
+    "brand": "SonicArc",
+    "price": 19200,
+    "rating": 3.8,
+    "description": "Sample speaker with portable sound for travel and gatherings. This fictional record is for ShopMind AI testing.",
+    "image_url": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=80",
+    "emoji": "♫",
+    "specifications": {
+      "wireless": true,
+      "battery_hours": 8,
+      "water_resistant": true
+    },
+    "is_sample_data": true
+  }
+]

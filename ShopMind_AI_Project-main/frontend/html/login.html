@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyer Sign In & Register — ShopMind AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .auth-container {
+      max-width: 480px;
+      margin: 40px auto 70px;
+      padding: 0 20px;
+    }
+    .auth-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: clamp(24px, 6vw, 40px);
+      box-shadow: 0 24px 60px rgba(104, 88, 232, 0.08);
+    }
+    .auth-tabs {
+      display: flex;
+      background: #f4f2fc;
+      border-radius: 12px;
+      padding: 4px;
+      margin-bottom: 26px;
+      gap: 4px;
+    }
+    .auth-tab {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: transparent;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .auth-tab.active {
+      background: white;
+      color: var(--purple);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .auth-form-group {
+      margin-bottom: 18px;
+    }
+    .auth-form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+    .auth-form-group input, .auth-form-group select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px;
+      background: #fafafc;
+      transition: border 0.2s;
+    }
+    .auth-form-group input:focus, .auth-form-group select:focus {
+      border-color: var(--purple);
+      outline: none;
+      background: white;
+    }
+    .auth-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      background: var(--purple);
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(104, 88, 232, 0.25);
+      transition: background 0.2s;
+      margin-top: 10px;
+    }
+    .auth-btn:hover {
+      background: var(--purple-dark);
+    }
+    .auth-alert {
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 12px;
+      margin-bottom: 16px;
+      display: none;
+    }
+    .auth-alert.error {
+      background: #fee2e2;
+      color: #991b1b;
+      display: block;
+    }
+    .auth-alert.success {
+      background: #dcfce7;
+      color: #166534;
+      display: block;
+    }
+    .demo-accounts {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .demo-pill {
+      display: inline-block;
+      margin: 6px 4px 0 0;
+      padding: 6px 12px;
+      background: #f4f2fc;
+      border: 1px solid #e8e4fb;
+      border-radius: 20px;
+      color: var(--purple);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 11px;
+    }
+    .demo-pill:hover {
+      background: var(--purple);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> ShopMind <b>AI</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="chat.html">Chat</a>
+      <a href="products.html">Products</a>
+      <a href="compare.html">Compare</a>
+      <a href="profile.html">Preferences</a>
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <div style="text-align: center; margin-bottom: 24px;">
+      <div class="eyebrow">BUYER AUTHENTICATION</div>
+      <h1 style="font-size: 32px; margin: 8px 0;">Welcome to <span>ShopMind</span></h1>
+      <p class="muted" style="margin: 0 auto; font-size: 13px;">Sign in to access your personal AI recommendations, order history, and custom budget preferences.</p>
+    </div>
+
+    <div class="auth-card">
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLogin" type="button">Sign In</button>
+        <button class="auth-tab" id="tabRegister" type="button">Create Account</button>
+      </div>
+
+      <div id="authAlert" class="auth-alert"></div>
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm">
+        <div class="auth-form-group">
+          <label for="loginEmail">Email Address</label>
+          <input id="loginEmail" type="email" placeholder="buyer@shopmind.ai" required autocomplete="email">
+        </div>
+        <div class="auth-form-group">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" type="password" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="auth-btn">Sign In to ShopMind</button>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="registerForm" style="display: none;">
+        <div class="auth-form-group">
+          <label for="regName">Full Name</label>
+          <input id="regName" type="text" placeholder="e.g. Priya Sharma" required>
+        </div>
+        <div class="auth-form-group">
+          <label for="regEmail">Email Address</label>
+          <input id="regEmail" type="email" placeholder="priya@example.com" required>
+        </div>
+        <div class="auth-form-group">
+          <label for="regPassword">Password</label>
+          <input id="regPassword" type="password" placeholder="Choose a password" required>
+        </div>
+        <div class="auth-form-group">
+          <label for="regCategory">Preferred Category</label>
+          <select id="regCategory">
+            <option value="Laptop">Laptop</option>
+            <option value="Phone">Phone</option>
+            <option value="Headphones">Headphones</option>
+            <option value="Monitor">Monitor</option>
+            <option value="Smartwatch">Smartwatch</option>
+          </select>
+        </div>
+        <div class="auth-form-group">
+          <label for="regBudget">Typical Budget (₹)</label>
+          <input id="regBudget" type="number" placeholder="60000" value="60000">
+        </div>
+        <button type="submit" class="auth-btn">Create Buyer Account</button>
+      </form>
+
+      <!-- DEMO 1-CLICK ACCOUNTS -->
+      <div class="demo-accounts">
+        <strong>Quick Demo Sign In:</strong>
+        <div>
+          <button class="demo-pill" type="button" onclick="quickFill('buyer@shopmind.ai', 'password123')">🧑‍💻 Alex (Tech & Laptop Buyer)</button>
+          <button class="demo-pill" type="button" onclick="quickFill('priya@shopmind.ai', 'password123')">🎧 Priya (Audio & Budget)</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="index.html">ShopMind <b>AI</b></a>
+    <span>Shop thoughtfully. Choose confidently.</span>
+    <span>© <span id="year"></span> ShopMind AI</span>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const tabLogin = document.getElementById("tabLogin");
+    const tabRegister = document.getElementById("tabRegister");
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+    const alertBox = document.getElementById("authAlert");
+
+    tabLogin.addEventListener("click", () => {
+      tabLogin.classList.add("active");
+      tabRegister.classList.remove("active");
+      loginForm.style.display = "block";
+      registerForm.style.display = "none";
+      alertBox.className = "auth-alert";
+    });
+
+    tabRegister.addEventListener("click", () => {
+      tabRegister.classList.add("active");
+      tabLogin.classList.remove("active");
+      registerForm.style.display = "block";
+      loginForm.style.display = "none";
+      alertBox.className = "auth-alert";
+    });
+
+    function showAlert(msg, isError = true) {
+      alertBox.textContent = msg;
+      alertBox.className = isError ? "auth-alert error" : "auth-alert success";
+    }
+
+    function quickFill(email, pass) {
+      document.getElementById("loginEmail").value = email;
+      document.getElementById("loginPassword").value = pass;
+      tabLogin.click();
+    }
+
+    loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("loginEmail").value;
+      const pass = document.getElementById("loginPassword").value;
+      try {
+        await loginUser(email, pass);
+        showAlert("Login successful! Redirecting...", false);
+        setTimeout(() => { window.location.href = "profile.html"; }, 700);
+      } catch (err) {
+        showAlert(err.message);
+      }
+    });
+
+    registerForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name = document.getElementById("regName").value;
+      const email = document.getElementById("regEmail").value;
+      const pass = document.getElementById("regPassword").value;
+      const category = document.getElementById("regCategory").value;
+      const budget = document.getElementById("regBudget").value;
+
+      try {
+        await registerUser({ name, email, password: pass, categories: category, budget: Number(budget) });
+        showAlert("Account created successfully! Redirecting to preferences...", false);
+        setTimeout(() => { window.location.href = "profile.html"; }, 700);
+      } catch (err) {
+        showAlert(err.message);
+      }
+    });
+  </script>
+</body>
+</html>
