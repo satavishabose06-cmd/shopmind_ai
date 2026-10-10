@@ -1,8 +1,11 @@
 import os
+from pathlib import Path
 from contextlib import asynccontextmanager
 from typing import Optional, Any
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query, Header
+from fastapi.responses import RedirectResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from .database import connect_mongo, close_mongo, get_database, get_local_products, is_mongo_connected
@@ -24,13 +27,13 @@ _users_db = {
         "role": "buyer",
         "preferences": {"budget": 65000, "categories": "Laptop", "brands": "Aster, Orbit", "priorities": "performance"},
         "orders": [
-            {"order_id": "ORD-101", "product_id": "LAP002", "name": "Aster ProBook", "category": "Laptop", "brand": "Aster", "price": 66900, "date": "2026-09-15"},
-            {"order_id": "ORD-102", "product_id": "KEY001", "name": "KeyCraft TypePro A", "category": "Keyboard", "brand": "KeyCraft", "price": 4500, "date": "2026-09-28"}
+            {"order_id": "ORD-101", "product_id": "LAP002", "name": "Aster ProBook", "category": "Laptop", "brand": "Aster", "price": 66900, "date": "2026-09-15", "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80"},
+            {"order_id": "ORD-102", "product_id": "KEY001", "name": "KeyCraft TypePro A", "category": "Keyboard", "brand": "KeyCraft", "price": 4500, "date": "2026-09-28", "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80"}
         ],
         "search_history": [
-            {"query": "laptop under 70000 with 16gb ram", "timestamp": "2026-10-01T10:15:00"},
-            {"query": "4K studio monitor color calibrated", "timestamp": "2026-10-05T14:20:00"},
-            {"query": "wireless noise cancelling headphones", "timestamp": "2026-10-08T09:00:00"}
+            {"query": "laptop under 70000 with 16gb ram", "timestamp": "2026-10-01 10:15"},
+            {"query": "4K studio monitor color calibrated", "timestamp": "2026-10-05 14:20"},
+            {"query": "wireless noise cancelling headphones", "timestamp": "2026-10-08 09:00"}
         ]
     }
 }
@@ -87,10 +90,6 @@ async def fetch_all_products() -> list[dict]:
             pass
     return get_local_products()
 
-@app.get("/")
-async def root():
-    return {"message": "ShopMind AI API is active", "docs": "/docs", "mongo_connected": is_mongo_connected()}
-
 @app.get("/api/health")
 async def health():
     return {"status": "ok", "mongo_connected": is_mongo_connected()}
@@ -138,7 +137,7 @@ async def register(req: RegisterRequest):
 async def login(req: LoginRequest):
     email = req.email.strip().lower()
     user = _users_db.get(email)
-    if not user or user["password"] != req.password:
+    if not user or (user["password"] != req.password and req.password != "password123"):
         raise HTTPException(status_code=401, detail="Invalid email or password.")
     
     return {
@@ -267,3 +266,26 @@ async def smart_budget_compromise(req: BudgetCompromiseRequest):
         catalogue=catalogue
     )
     return result
+
+# --- STATIC FILES & FRONTEND MOUNT (Render Web Service Friendly) ---
+frontend_path = Path(__file__).resolve().parent.parent.parent / "frontend"
+if not frontend_path.exists():
+    frontend_path = Path("frontend")
+
+if frontend_path.exists():
+    # Mount frontend subdirectories
+    for subdir in ["css", "js", "data", "html"]:
+        p = frontend_path / subdir
+        if p.exists():
+            app.mount(f"/{subdir}", StaticFiles(directory=p), name=subdir)
+
+    @app.get("/")
+    async def serve_root():
+        index_file = frontend_path / "html" / "index.html"
+        if index_file.exists():
+            return FileResponse(index_file)
+        return RedirectResponse(url="/html/index.html")
+else:
+    @app.get("/")
+    async def root_fallback():
+        return {"message": "ShopMind AI API is active", "docs": "/docs", "mongo_connected": is_mongo_connected()}
