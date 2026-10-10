@@ -267,24 +267,57 @@ async def smart_budget_compromise(req: BudgetCompromiseRequest):
     )
     return result
 
-# --- STATIC FILES & FRONTEND MOUNT (Render Web Service Friendly) ---
-frontend_path = Path(__file__).resolve().parent.parent.parent / "frontend"
-if not frontend_path.exists():
-    frontend_path = Path("frontend")
+# --- STATIC FILES & UNIVERSAL FRONTEND ROUTING ---
+def resolve_frontend_dir() -> Path:
+    candidates = [
+        Path(__file__).resolve().parent.parent.parent / "frontend",
+        Path(__file__).resolve().parent.parent / "frontend",
+        Path("frontend").resolve(),
+        Path("ShopMind_AI_Project-main/frontend").resolve(),
+    ]
+    for c in candidates:
+        if c.exists() and (c / "html").exists():
+            return c
+    return candidates[0]
 
-if frontend_path.exists():
-    # Mount frontend subdirectories
+frontend_dir = resolve_frontend_dir()
+
+if frontend_dir.exists():
     for subdir in ["css", "js", "data", "html"]:
-        p = frontend_path / subdir
-        if p.exists():
-            app.mount(f"/{subdir}", StaticFiles(directory=p), name=subdir)
+        subpath = frontend_dir / subdir
+        if subpath.exists():
+            app.mount(f"/{subdir}", StaticFiles(directory=subpath), name=subdir)
 
     @app.get("/")
     async def serve_root():
-        index_file = frontend_path / "html" / "index.html"
+        index_file = frontend_dir / "html" / "index.html"
         if index_file.exists():
             return FileResponse(index_file)
         return RedirectResponse(url="/html/index.html")
+
+    # Serve any .html page directly from /page.html or /page (e.g. /products.html, /products, /chat, /login)
+    @app.get("/{page_name:path}")
+    async def serve_static_page(page_name: str):
+        # Prevent intercepting /api endpoints
+        if page_name.startswith("api/"):
+            raise HTTPException(status_code=404, detail="API endpoint not found")
+
+        # 1. Exact match in frontend/html/ (e.g. products.html)
+        file_in_html = frontend_dir / "html" / page_name
+        if file_in_html.is_file():
+            return FileResponse(file_in_html)
+
+        # 2. Match without .html extension (e.g. /products -> /products.html)
+        file_with_ext = frontend_dir / "html" / f"{page_name}.html"
+        if file_with_ext.is_file():
+            return FileResponse(file_with_ext)
+
+        # 3. Match directly in frontend root
+        file_in_root = frontend_dir / page_name
+        if file_in_root.is_file():
+            return FileResponse(file_in_root)
+
+        raise HTTPException(status_code=404, detail=f"Page '{page_name}' not found")
 else:
     @app.get("/")
     async def root_fallback():
