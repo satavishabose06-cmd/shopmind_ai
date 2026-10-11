@@ -1,3 +1,4 @@
+<img width="1861" height="888" alt="Screenshot 2026-10-11 124901" src="https://github.com/user-attachments/assets/fb3fb984-8912-4327-a3c9-9a5fe1818560" />
 # ShopMind AI — HTML/CSS/JS + FastAPI + MongoDB + LangGraph
 
 ## AI features implemented
